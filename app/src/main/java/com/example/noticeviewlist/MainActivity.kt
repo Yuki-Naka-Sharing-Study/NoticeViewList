@@ -15,53 +15,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.noticeviewlist.R
 
-//package com.example.noticeviewlist
-//
-//import android.os.Bundle
-//import androidx.activity.ComponentActivity
-//import androidx.activity.compose.setContent
-//import androidx.compose.foundation.layout.fillMaxSize
-//import androidx.compose.material3.MaterialTheme
-//import androidx.compose.material3.Surface
-//import androidx.compose.material3.Text
-//import androidx.compose.runtime.Composable
-//import androidx.compose.ui.Modifier
-//import androidx.compose.ui.tooling.preview.Preview
-//import com.example.noticeviewlist.ui.theme.NoticeViewListTheme
-//
-//class MainActivity : ComponentActivity() {
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//        setContent {
-//            NoticeViewListTheme {
-//                // A surface container using the 'background' color from the theme
-//                Surface(
-//                    modifier = Modifier.fillMaxSize(),
-//                    color = MaterialTheme.colorScheme.background
-//                ) {
-//                    Greeting("Android")
-//                }
-//            }
-//        }
-//    }
-//}
-//
-//@Composable
-//fun Greeting(name: String, modifier: Modifier = Modifier) {
-//    Text(
-//        text = "Hello $name!",
-//        modifier = modifier
-//    )
-//}
-//
-//@Preview(showBackground = true)
-//@Composable
-//fun GreetingPreview() {
-//    NoticeViewListTheme {
-//        Greeting("Android")
-//    }
-//}
-
 @Preview(showBackground = true)
 @Composable
 fun NoticeViewList() {
@@ -71,8 +24,10 @@ fun NoticeViewList() {
             .fillMaxWidth(),
         horizontalArrangement = Arrangement.Absolute.SpaceBetween, Alignment.CenterVertically
     ){
-        Text(text = "あいうえお",
-            Modifier.padding(8.dp, 8.dp, 0.dp, 8.dp),
+        Text(text = "あいうえお、かきくけこ、さしすせそ、たちつてと、なにぬねの、",
+            Modifier
+                .padding(8.dp, 8.dp, 0.dp, 8.dp)
+                .weight(1f, fill = false),
             maxLines = 1,
             overflow = TextOverflow.Ellipsis,
             fontSize = 12.sp
